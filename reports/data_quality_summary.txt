@@ -1,0 +1,109 @@
+DATA QUALITY SUMMARY
+
+Project: Mutual Fund Analytics
+Prepared By: Snehal Patil
+
+==================================================
+
+1. 01_fund_master.csv
+
+* Shape: (40, 15)
+* Missing Values: 0
+* Duplicate Rows: 0
+* Status: Clean
+
+2. 02_nav_history.csv
+
+* Shape: (46,000, 3)
+* Missing Values: 0
+* Duplicate Rows: 0
+* Status: Clean
+
+3. 03_aum_by_fund_house.csv
+
+* Shape: (90, 5)
+* Missing Values: 0
+* Duplicate Rows: 0
+* Status: Clean
+
+4. 04_monthly_sip_inflows.csv
+
+* Shape: (48, 6)
+* Missing Values: 12 values in yoy_growth_pct column
+* Duplicate Rows: 0
+* Status: Requires Missing Value Treatment
+
+5. 05_category_inflows.csv
+
+* Shape: (144, 3)
+* Missing Values: 0
+* Duplicate Rows: 0
+* Status: Clean
+
+6. 06_industry_folio_count.csv
+
+* Shape: (21, 6)
+* Missing Values: 0
+* Duplicate Rows: 0
+* Status: Clean
+
+7. 07_scheme_performance.csv
+
+* Shape: (40, 19)
+* Missing Values: 0
+* Duplicate Rows: 0
+* Status: Clean
+
+8. 08_investor_transactions.csv
+
+* Shape: (32,778, 13)
+* Missing Values: 0
+* Duplicate Rows: 0
+* Status: Clean
+
+9. 09_portfolio_holdings.csv
+
+* Shape: (322, 8)
+* Missing Values: 0
+* Duplicate Rows: 0
+* Status: Clean
+
+10. 10_benchmark_indices.csv
+
+* Shape: (8,050, 3)
+* Missing Values: 0
+* Duplicate Rows: 0
+* Status: Clean
+
+==================================================
+
+OVERALL OBSERVATIONS
+
+* Total Datasets Analyzed: 10
+* Total Records Across Datasets: 87,533+
+* Datasets with Missing Values: 1
+* Datasets with Duplicate Records: 0
+* Data Quality Score: Excellent
+
+KEY FINDINGS
+
+1. All datasets were successfully loaded and validated.
+2. No duplicate records were found in any dataset.
+3. Only one dataset (04_monthly_sip_inflows.csv) contains missing values.
+4. Missing values are present only in the yoy_growth_pct column and likely correspond to initial periods where YoY growth cannot be calculated.
+5. AMFI codes are consistently available across fund-related datasets, enabling data integration.
+6. Data types are appropriate for analytical processing.
+7. Dataset is ready for ETL transformation, feature engineering, SQL loading, and dashboard development.
+
+RECOMMENDED ACTIONS
+
+* Convert date columns to datetime format.
+* Handle missing values in yoy_growth_pct using NULL retention or suitable imputation.
+* Standardize column naming conventions.
+* Validate AMFI code relationships across datasets.
+* Create processed datasets for analysis and visualization.
+
+==================================================
+
+Conclusion:
+The Mutual Fund Analytics dataset is of high quality with negligible data issues. The data is suitable for further ETL processing, KPI creation, exploratory data analysis, SQL integration, and dashboard development.
