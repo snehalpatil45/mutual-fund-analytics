@@ -1,22 +1,10 @@
 # Mutual Fund Analytics
 
-## Project Overview
+## Overview
 
-This project analyzes mutual fund data using Python, Pandas, SQL, and data visualization tools. The goal is to perform data ingestion, cleaning, analysis, and dashboard creation for mutual fund performance insights.
+A data analytics project to analyze mutual fund performance using Python, Pandas, and data visualization techniques.
 
-## Project Structure
-
-Mutual_Fund_Analytics/
-
-* data/raw/
-* data/processed/
-* notebooks/
-* sql/
-* dashboard/
-* reports/
-* scripts/
-
-## Technologies Used
+## Tools Used
 
 * Python
 * Pandas
@@ -24,17 +12,11 @@ Mutual_Fund_Analytics/
 * Matplotlib
 * Seaborn
 * Plotly
-* SQLAlchemy
-* Requests
-* Jupyter Notebook
 
-## Day 1 Tasks Completed
+## Project Goals
 
-* Project folder setup
-* Data ingestion from CSV files
-* Data quality checks
-* Live NAV data fetching
-* AMFI code validation
-* GitHub repository initialization
-
-
+* Data Ingestion (ETL)
+* Data Cleaning
+* NAV Analysis
+* Performance Tracking
+* Dashboard Creation
