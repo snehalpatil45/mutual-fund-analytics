@@ -1,0 +1,19 @@
+AMFI CODE VALIDATION REPORT
+
+Datasets Validated:
+1. Fund Master
+2. NAV History
+3. Scheme Performance
+
+Results:
+- Total AMFI Codes in Fund Master: 40
+- Total AMFI Codes in NAV History: 40
+- Total AMFI Codes in Scheme Performance: 40
+
+Validation Status:
+- No missing AMFI codes found.
+- All datasets are properly linked using AMFI Code.
+- Data integration can be performed safely.
+
+Conclusion:
+AMFI Code integrity is maintained across all major datasets, enabling reliable joins and analysis.
