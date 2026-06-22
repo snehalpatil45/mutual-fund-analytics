@@ -1,0 +1,21 @@
+FUND MASTER DATASET SUMMARY
+
+Total Schemes: 40
+Total Attributes: 15
+
+Key Fields:
+- AMFI Code
+- Fund House
+- Scheme Name
+- Category
+- Sub Category
+- Expense Ratio
+- Risk Category
+- Fund Manager
+
+Insights:
+1. Dataset contains diversified mutual fund schemes.
+2. Risk profiles range from Low to Very High.
+3. Expense ratios and exit loads are available for performance analysis.
+4. AMFI codes can be used to join with NAV history and performance datasets.
+5. Dataset serves as the master table for all mutual fund analytics
